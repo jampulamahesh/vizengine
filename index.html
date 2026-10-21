@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIZENGINE — Engineering Comes Alive</title>
+<meta name="description" content="Learn engineering through AI, interactive visualisation, 3D models, simulations, animation and real-world projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="importmap">
+{"imports":{
+  "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+}}
+</script>
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=JSON.parse(localStorage.getItem('viz:theme'));if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<div class="app">
+  <aside id="side" class="side" aria-label="Main navigation"></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main-wrap">
+    <header class="topbar" id="topbar"></header>
+    <main id="view" tabindex="-1"></main>
+  </div>
+</div>
+<noscript>VIZENGINE needs JavaScript enabled.</noscript>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
